@@ -106,5 +106,10 @@ namespace sistema_gestao_estudantes
                 return true;
             }
         }
+
+        private void pictureBoxFoto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

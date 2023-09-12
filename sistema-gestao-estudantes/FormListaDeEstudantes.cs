@@ -43,10 +43,10 @@ namespace sistema_gestao_estudantes
         {
             // Abre o estudante selecionado.
             AtualizarDeletarEstudante atualizarDeletarEstudante = new AtualizarDeletarEstudante();
-            atualizarDeletarEstudante.textBoxId.Text = dataGridViewLista.CurrentRow.Cells[0].Value.ToString();
+            atualizarDeletarEstudante.textBoxID.Text = dataGridViewLista.CurrentRow.Cells[0].Value.ToString();
             atualizarDeletarEstudante.textBoxNome.Text = dataGridViewLista.CurrentRow.Cells[1].Value.ToString();
             atualizarDeletarEstudante.textBoxSobrenome.Text = dataGridViewLista.CurrentRow.Cells[2].Value.ToString();
-            atualizarDeletarEstudante.dateTimePickerDataNascimento.Value = (DateTime)dataGridViewLista.CurrentRow.Cells[3].Value;
+            atualizarDeletarEstudante.dateTimePickerNascimento.Value = (DateTime)dataGridViewLista.CurrentRow.Cells[3].Value;
 
             if (dataGridViewLista.CurrentRow.Cells[4].Value.ToString() == "feminino")
             {
@@ -57,7 +57,7 @@ namespace sistema_gestao_estudantes
                 atualizarDeletarEstudante.radioButtonMasculino.Checked = true;
             }
             atualizarDeletarEstudante.textBoxTelefone.Text = dataGridViewLista.CurrentRow.Cells[5].Value.ToString();
-            atualizarDeletarEstudante.textBoxEndereço.Text = dataGridViewLista.CurrentRow.Cells[6].Value.ToString();
+            atualizarDeletarEstudante.textBoxEndereco.Text = dataGridViewLista.CurrentRow.Cells[6].Value.ToString();
 
             // A foto:
             byte[] fotoDaLista;

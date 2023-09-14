@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonProcurar = new System.Windows.Forms.Button();
             this.textBoxSobrenome = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.labelNome = new System.Windows.Forms.Label();
@@ -71,14 +71,15 @@
             this.textBoxID.Size = new System.Drawing.Size(135, 20);
             this.textBoxID.TabIndex = 1;
             // 
-            // button1
+            // buttonProcurar
             // 
-            this.button1.Location = new System.Drawing.Point(317, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Procurar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonProcurar.Location = new System.Drawing.Point(317, 20);
+            this.buttonProcurar.Name = "buttonProcurar";
+            this.buttonProcurar.Size = new System.Drawing.Size(75, 23);
+            this.buttonProcurar.TabIndex = 2;
+            this.buttonProcurar.Text = "Procurar";
+            this.buttonProcurar.UseVisualStyleBackColor = true;
+            this.buttonProcurar.Click += new System.EventHandler(this.buttonProcurar_Click);
             // 
             // textBoxSobrenome
             // 
@@ -245,6 +246,7 @@
             this.buttonRemover.TabIndex = 25;
             this.buttonRemover.Text = "Remover";
             this.buttonRemover.UseVisualStyleBackColor = true;
+            this.buttonRemover.Click += new System.EventHandler(this.buttonRemover_Click);
             // 
             // buttonConfirmar
             // 
@@ -277,7 +279,7 @@
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.textBoxSobrenome);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonProcurar);
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.label1);
             this.Name = "AtualizarDeletarEstudante";
@@ -293,7 +295,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonProcurar;
         private System.Windows.Forms.Label labelNome;
         private System.Windows.Forms.Label labelSobrenome;
         private System.Windows.Forms.Label label7;
